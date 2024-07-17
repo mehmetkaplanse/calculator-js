@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-input {
+    width: 100%;
+    font-size: 3.6rem;
+    height: 80px;
+    border: none;
+    color: #fff;
+    background-color: #252525;
+    text-align: right;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+button {
+    height: 60px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 2.2rem;
+    color: #333;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.operator {
+    color: #337cac;
+}
+
+.clear {
+    background-color: #f0595f;
+    border-color: #eb5055;
+    color: #fff;
+}
+
+.clear:hover {
+    background-color: #f17377;
+    cursor: pointer;
+}
+
+.equal-sign {
+    background-color: #06a585;
+    border-color: #013230;
+    color: #fff;
+    grid-area: 2 / 4 / 6 / 5; 
+    height: 100%;
+    border-radius: 5px;
+}
+
+.equal-sign:hover {
+    background-color: #09c59f;
+    cursor: pointer;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #337cac;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
